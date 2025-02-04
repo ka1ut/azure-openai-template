@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  worker:
+    container_name: azure-openai-worker
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    volumes:
+      - .:/app
+    environment:
+      - PYTHONUNBUFFERED=1
+      - PYTHONPATH=/app
+    stdin_open: true 
+    tty: true
