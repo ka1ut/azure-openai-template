@@ -3,7 +3,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-class AvilableModels:
+class AvailableModels:
     """
     利用可能な OpenAI モデル
     """
